@@ -1,0 +1,78 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #be7fe7;
+}
+
+.navbar {
+    font-size: 16px;
+    background-color: rgb(187, 9, 148) !important
+}
+
+navbar-text,
+.navbar-brand {
+    color: rgb(14, 14, 14) !important;
+}
+
+.navbar .nav-link {
+    color: rgb(14, 13, 13) !important;
+}
+
+header {
+    margin-top: 90px;
+}
+
+.card.text-center{
+    margin-top: 20px;
+    background-color: #be7fe7;
+
+}
+.card-body {
+    background-color: #be7fe7;
+    color: #be7fe7;
+    border: 2px solid #060606;
+}
+
+.card .form-group {
+    background-color: #be7fe7;
+    color: #060606;
+}
+.card {
+    background-color: #be7fe7;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(15, 15, 15, 0.2);
+}
+
+.card input,
+.card textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d8b4f0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #be7fe7;
+    color: #f0eeee;
+}
+
+.card input:focus,
+.card textarea:focus {
+    outline: none;
+    border-color: #8a3fc4;
+    box-shadow: 0 0 5px rgba(138, 63, 196, 0.5);
+}
+
+.card .btn-secondary {
+    background-color: #8a3fc4;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.card .btn-secondary:hover {
+    background-color: #7330a8;
+}
