@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script>
+    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+    key: "AIzaSyAwrzuIQP62JBrpBuqXPAKdd7274EMcrmY",
+    v: "weekly",
+           
+                        });
+    </script>
     <title>Pagina personal de Alan Martinez Arellano</title>
 </head>
 <header id="header">
@@ -112,7 +119,8 @@ Me encuentro a su disposición para orientar y acompañar a mis clientes en la d
                 </div>
             </div>
             <br>
-            <!--
+        </div>
+        <div class="row mt-3">
             <div class="col-md-6">
                 <div class="contacto md-5">
                     <h2 class="display-4">Deje su mensaje</h2>
@@ -125,7 +133,7 @@ Me encuentro a su disposición para orientar y acompañar a mis clientes en la d
                                 <input type="email" name="email" placeholder="Ingrese su correo electrónico" required>
                             </div>
                             <div class="form-group">
-                                <textarea name="message" rows="15" cols="40" placeholder="Ingrese su mensaje" required></textarea>
+                                <textarea name="message" rows="5" cols="40" placeholder="Ingrese su mensaje" required></textarea>
                             </div>
                             <input type="hidden" name="_captcha" value="false">
                             <button type="submit" class="btn btn-secondary btn-block">Enviar</button>
@@ -133,31 +141,21 @@ Me encuentro a su disposición para orientar y acompañar a mis clientes en la d
                     </form>
 
                 </div>
-            </div> 
-            -->
-        </div>
-        <div class="row mt-3">
-            <div class="col-md-12">
-                <div class="contacto md-5">
-                    <h2 class="display-4">Deje su mensaje</h2>
-                    <form class="card" action="https://formsubmit.co/juansubira90@gmail.com" method="POST">  
-                        <div class="card-body mt-3">
-                            <div class="form-group">
-                                <input type="text" name="name" placeholder="Ingrese su nombre" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Ingrese su correo electrónico" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" rows="15" cols="40" placeholder="Ingrese su mensaje" required></textarea>
-                            </div>
-                            <input type="hidden" name="_captcha" value="false">
-                            <button type="submit" class="btn btn-secondary btn-block">Enviar</button>
-                        </div>
-                    </form>
-
+            </div>
+            <div class="col-md-6">
+                <div id="map" style="border-radius: 8px;">
+                    <h2 class="display-4">Donde estamos</h2>
+                    <gmp-map center="-34.60817655773528" zoom="14" mapId="7edfabb7fde95802aa216aeb"></gmp-map>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8412119098725!2d-58.37316902337964!3d-34.60817655773528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbf2d1b8f%3A0x15194cd11e637c!2sBalcarce%2050%2C%20C1086%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1783533577872!5m2!1ses!2sar" 
+                    width="480" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
                 </div>
-            </div> 
+            </div>
         </div>
     </div>
 </section>
@@ -194,8 +192,8 @@ window.onload = () => {
     window.scrollTo(0,0);
 };
 </script>
-};
-</script>
+
+
 <script>
     window.sr = ScrollReveal();
     sr.reveal('.navbar', { 
@@ -226,9 +224,7 @@ window.onload = () => {
         duration: 2000,
         origin: 'bottom'
     });
-// Source - https://stackoverflow.com/a/7717572
-// Posted by Joseph Silber, modified by community. See post 'Timeline' for change history
-// Retrieved 2026-06-04, License - CC BY-SA 3.0
+
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
