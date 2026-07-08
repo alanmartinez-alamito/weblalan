@@ -1,25 +1,23 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #dadde1;
     margin: 0;
     padding: 0;
-    background-color: #3325a0;
+    background-color: #be7fe7;
 }
 
 .navbar {
     font-size: 16px;
-    background-color: rgb(30, 3, 99);
-    color: azure !important;
+    background-color: rgb(187, 9, 148) !important
 }
 
-.navbar-text,
+navbar-text,
 .navbar-brand {
-    color: rgb(144, 141, 141) !important;
+    color: rgb(14, 14, 14) !important;
 }
 
 .navbar .nav-link {
-    color: rgb(144, 141, 141) !important;
+    color: rgb(14, 13, 13) !important;
 }
 
 header {
@@ -28,25 +26,25 @@ header {
 
 .card .text-center{
     margin-top: 20px;
-    background-color: #350257;
+    background-color: #be7fe7;
 
 }
 .card-body {
-    background-color: #1062a0;
-    color: #1f6993;
+    background-color: #be7fe7;
+    color: #be7fe7;
     border: 2px solid #060606;
 }
 
 .card .form-group {
-    background-color: #1062a0;
-    color: #dadde1;
+    background-color: #be7fe7;
+    color: #060606;
 }
 .card{
     border:none;
     border-radius:20px;
     box-shadow:0 10px 30px rgba(0,0,0,.1);
     transition:.3s;
-    background-color: rgba(31, 55, 164, 0.5)
+    background-color: rgba(138, 63, 196, 0.5)
 }
 .card:hover{
     transform:translateY(-10px);
@@ -65,10 +63,10 @@ section{
 .card textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #0e0e0f;
+    border: 1px solid #d8b4f0;
     border-radius: 8px;
     margin-bottom: 15px;
-    background-color: #dadde1;
+    background-color: #e2c6dd;
     color: #040404;
 }
 
@@ -80,7 +78,7 @@ section{
 }
 
 .card .btn-secondary {
-    background-color: #0c0570;
+    background-color: #8a3fc4;
     border: none;
     width: 100%;
     padding: 10px;
@@ -88,7 +86,7 @@ section{
 }
 
 .card .btn-secondary:hover {
-    background-color: #323b84;
+    background-color: #7330a8;
 }
 
 .redes-sociales a{
@@ -117,9 +115,4 @@ section{
     text-decoration:none;
     z-index:999;
     box-shadow:0 5px 15px rgba(0,0,0,.3);
-}
-
-#map {
-    width: 100%;
-    height: 100%;
 }
