@@ -11,7 +11,8 @@
     (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
     key: "AIzaSyAwrzuIQP62JBrpBuqXPAKdd7274EMcrmY",
     v: "weekly",
-           
+                        // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+                        // Add other bootstrap parameters as needed, using camel case.
                         });
     </script>
     <title>Pagina personal de Alan Martinez Arellano</title>
@@ -119,6 +120,29 @@ Me encuentro a su disposición para orientar y acompañar a mis clientes en la d
                 </div>
             </div>
             <br>
+            <!--
+            <div class="col-md-6">
+                <div class="contacto md-5">
+                    <h2 class="display-4">Deje su mensaje</h2>
+                    <form class="card" action="https://formsubmit.co/juansubira90@gmail.com" method="POST">  
+                        <div class="card-body mt-3">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Ingrese su nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" rows="15" cols="40" placeholder="Ingrese su mensaje" required></textarea>
+                            </div>
+                            <input type="hidden" name="_captcha" value="false">
+                            <button type="submit" class="btn btn-secondary btn-block">Enviar</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div> 
+            -->
         </div>
         <div class="row mt-3">
             <div class="col-md-6">
@@ -224,7 +248,9 @@ window.onload = () => {
         duration: 2000,
         origin: 'bottom'
     });
-
+// Source - https://stackoverflow.com/a/7717572
+// Posted by Joseph Silber, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-06-04, License - CC BY-SA 3.0
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
